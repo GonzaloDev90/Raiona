@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css'; // Asegúrate de que este archivo CSS esté actualizado
 const images = import.meta.glob('./assets/autos/*.jpg', { eager: true });
 import logoWhatsapp from './assets/logoWhatsapp.png';
+import logoRaiona from './assets/logoRaiona.jpg';
 
 const imagesArray = Object.keys(images)
   .sort((a, b) => {
@@ -256,7 +257,7 @@ const Header = () => {
   return (
     <header className="header">
     <div className='logo_container'>
-        <img className="logo_header" src="./src/assets/logoRaiona.jpg" alt=""></img>
+        <img className="logo_header" src={logoRaiona} alt=""></img>
     </div>
     <div className='header_texto'>
       <h1>RAIONA AUTOMOVILES</h1>
