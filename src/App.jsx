@@ -255,8 +255,13 @@ if (auto.active) {
 const Header = () => {
   return (
     <header className="header">
-      <h1>SHOWROOM ONLINE</h1>
-      <p>Los mejores autos para tu familia</p>
+    <div className='logo_container'>
+        <img className="logo_header" src="./src/assets/logoRaiona.jpg" alt=""></img>
+    </div>
+    <div className='header_texto'>
+      <h1>RAIONA AUTOMOVILES</h1>
+      <p>Showroom Online</p>
+    </div>
     </header>
   );
 };
@@ -269,14 +274,15 @@ const Aside = () => {
       <p>Autos 0km</p>
       <p>Recambio</p>
       <p>Financiación</p>
-      <p className='cuotas'>¡De 12 a 48 cuotas fijas en pesos!</p>
-      <p className='cuotas'>¡3 meses de garantía en motor y transmisión!</p>
+      <p className='centrado'>¡De 12 a 48 cuotas fijas en pesos!</p>
+      <p className='centrado'>¡3 meses de garantía en motor y transmisión!</p>
       <p> </p>
       <a href="https://wa.me/541134351090" target="_blank" rel="noopener noreferrer">
         <img className='logo-whatsapp' src={logoWhatsapp} alt="Logo WhatsApp" />
         <p className="whatsapp">WhatsApp</p>
         <p className='numero'>11 3435-1090</p>
       </a>
+      <p className='centrado'>Gonzalo<br/>Asesor Automotor</p>
     </aside>
   );
 };

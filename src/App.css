@@ -32,15 +32,33 @@ body {
   color: #dae1ee;
   padding: 20px;
   text-align: center;
-  border-radius: 0px 30px;
+  border-radius: 0px 0 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 40px 20px 50px;
+}
+
+.logo_header {
+  width: 250px;
+}
+
+.header_logo{
+  width: 10%;
+}
+
+.header_texto {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  align-items: center;
+  width: 65%;
 }
 
 .header h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 3.5em;
+  color: rgb(189, 132, 8);
 }
 
 .header p {
@@ -73,7 +91,7 @@ body {
 
 .auto-card {
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   width: 300px;
   border-radius: 8px;
   background-color: #7070759c;
@@ -128,16 +146,27 @@ h3 {
 
 .caract {
   columns: 2;
+  margin-bottom: 50px;
 }
 
 aside a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ffffff;
 }
 
-.cuotas{
+aside a:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.centrado {
   text-align: center;
+}
+
+.numero {
+  color: white;
 }
 
 .whatsapp {
@@ -147,11 +176,6 @@ aside a {
 .logo-whatsapp {
   width: 40px;
   height: 40px;
-}
-
-.numero {
-  text-decoration: none;
-  color: #ffffff;
 }
 
 .modal {
@@ -193,6 +217,21 @@ aside a {
   .auto-card {
     width: 90%;
     max-width: 400px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo_header {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .header_texto {
+    align-items: center;
+    width: auto;
   }
 
   .header h1 {
@@ -244,5 +283,20 @@ aside a {
 
   h3 {
     font-size: 24px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo_header {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .header_texto {
+    align-items: center;
+    width: auto;
   }
 }
