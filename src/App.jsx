@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css'; // Asegúrate de que este archivo CSS esté actualizado
 const images = import.meta.glob('./assets/autos/*.jpg', { eager: true });
+import logoWhatsapp from './assets/logoWhatsapp.png';
 
 const imagesArray = Object.keys(images)
   .sort((a, b) => {
@@ -34,7 +35,7 @@ const autosData = [
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-    {
+  {
     id: 4,
     nombre: 'Renault',
     imagen: imagesArray[3],
@@ -55,7 +56,7 @@ const autosData = [
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-   {
+  {
     id: 7,
     nombre: 'Ford Fiesta',
     imagen: imagesArray[6],
@@ -69,70 +70,70 @@ const autosData = [
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-    {
+  {
     id: 9,
     nombre: 'Fiat',
     imagen: imagesArray[8],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-      {
+  {
     id: 10,
     nombre: 'Renault',
     imagen: imagesArray[9],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-        {
+  {
     id: 11,
     nombre: 'Masseratti',
     imagen: imagesArray[10],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-          {
+  {
     id: 12,
     nombre: 'Ford Ecosport',
     imagen: imagesArray[11],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-            {
+  {
     id: 13,
     nombre: 'Renault',
     imagen: imagesArray[12],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-              {
+  {
     id: 14,
     nombre: 'Citroen C3',
     imagen: imagesArray[13],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-                {
+  {
     id: 15,
     nombre: 'Ford',
     imagen: imagesArray[14],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-                  {
+  {
     id: 16,
-    nombre: 'Peugeot',
+    nombre: 'Peugeot 408 Sport',
     imagen: imagesArray[15],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-                    {
+  {
     id: 17,
     nombre: 'Ford Ranger',
     imagen: imagesArray[16],
     vendido: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
-                      {
+  {
     id: 18,
     nombre: 'Volkswagen Amarok',
     imagen: imagesArray[17],
@@ -146,10 +147,10 @@ const AutoCard = ({ auto, onConsultar, onImageClick }) => {
   return (
     <div className="auto-card">
       <div className="image-container">
-        <img 
-          src={auto.imagen} 
-          alt={auto.nombre} 
-          className="auto-image" 
+        <img
+          src={auto.imagen}
+          alt={auto.nombre}
+          className="auto-image"
           onClick={onImageClick} // Agregamos el evento onClick
         />
         {auto.vendido && <div className="sold-banner">Vendido</div>}
@@ -184,8 +185,8 @@ const Aside = () => {
       <p>Financiación</p>
       <p> </p>
       <a href="https://wa.me/541134351090" target="_blank" rel="noopener noreferrer">
-      <img className='logo-whatsapp' src="./src/assets/logoWhatsapp.png" alt="" />
-      <p className="whatsapp">WhatsApp</p>
+        <img className='logo-whatsapp' src={logoWhatsapp} alt="Logo WhatsApp" />
+        <p className="whatsapp">WhatsApp</p>
         <p className='numero'>11 3435-1090</p>
       </a>
     </aside>
@@ -218,10 +219,10 @@ const App = () => {
         <Aside />
         <div className="autos-grid">
           {autos.map(auto => (
-            <AutoCard 
-              key={auto.id} 
-              auto={auto} 
-              onConsultar={handleConsultar} 
+            <AutoCard
+              key={auto.id}
+              auto={auto}
+              onConsultar={handleConsultar}
               onImageClick={() => openModal(auto.imagen)} // Pasamos la función para abrir el modal
             />
           ))}
