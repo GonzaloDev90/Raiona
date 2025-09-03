@@ -92,7 +92,7 @@ body {
 
 
   .auto-image:hover {
-  transform: scale(1.2);
+  transform: scale(1.13);
   cursor: pointer;
   }
 
@@ -112,7 +112,7 @@ body {
 .adelanto-banner {
   position: absolute;
   top: 160px;
-  left: 120px;
+  left: 125px;
   background-color: rgba(82, 5, 65, 0.815);
   color: white;
   padding: 5px 10px;
