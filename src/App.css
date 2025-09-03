@@ -5,6 +5,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  user-select: none; /* Desactiva la selección */
+  -webkit-user-select: none; /* Para navegadores WebKit (Chrome, Safari) */
+  -moz-user-select: none; /* Para Firefox */
+  -ms-user-select: none; /* Para Internet Explorer/Edge */
 }
 
 .app-container {
@@ -78,8 +82,13 @@ body {
 
 .auto-image {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 8px;
+}
+
+.auto-image:hover {
+  transform: scale(1.2);
+  cursor: pointer; 
 }
 
 .sold-banner {
@@ -96,8 +105,118 @@ body {
 
 h3 {
   text-align: center;
+  font-size: 30px;
+}
+
+aside a{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
 }
 
 .whatsapp {
-  color: rgb(16, 206, 9);
+  color: rgb(13, 158, 8);
+}
+
+.logo-whatsapp{
+  width: 40px;
+  height: 40px;
+}
+
+.numero {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Tablets (pantallas entre 600px y 900px) */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-aside {
+    width: 90%;
+    padding: 20px;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .autos-grid {
+    justify-content: center;
+  }
+
+  .auto-card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 1.2em;
+  }
+}
+
+/* Celulares (pantallas hasta 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-aside {
+    width: 100%;
+    padding: 15px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .autos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auto-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 0;
+  }
+
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .header p {
+    font-size: 1em;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
 }
