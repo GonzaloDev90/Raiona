@@ -19,13 +19,17 @@ const autosData = [
     nombre: 'Fiat Cronos',
     imagen: imagesArray[0],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
     id: 2,
     nombre: 'Nissan',
     imagen: imagesArray[1],
-    vendido: true,
+    vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.6L', 'Manual', '4 puertas'],
   },
   {
@@ -33,6 +37,7 @@ const autosData = [
     nombre: 'Chevrolet',
     imagen: imagesArray[2],
     vendido: false,
+    adelanto: false,
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -40,6 +45,8 @@ const autosData = [
     nombre: 'Renault',
     imagen: imagesArray[3],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -47,6 +54,8 @@ const autosData = [
     nombre: 'Volkswagen Fox',
     imagen: imagesArray[4],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.6L', 'Manual', '4 puertas'],
   },
   {
@@ -54,6 +63,8 @@ const autosData = [
     nombre: 'Fiat',
     imagen: imagesArray[5],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -61,6 +72,8 @@ const autosData = [
     nombre: 'Ford Fiesta',
     imagen: imagesArray[6],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.6L', 'Manual', '4 puertas'],
   },
   {
@@ -68,6 +81,8 @@ const autosData = [
     nombre: 'Fiat',
     imagen: imagesArray[7],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -75,6 +90,8 @@ const autosData = [
     nombre: 'Fiat',
     imagen: imagesArray[8],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -82,6 +99,8 @@ const autosData = [
     nombre: 'Renault',
     imagen: imagesArray[9],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -89,6 +108,8 @@ const autosData = [
     nombre: 'Masseratti',
     imagen: imagesArray[10],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -96,6 +117,8 @@ const autosData = [
     nombre: 'Ford Ecosport',
     imagen: imagesArray[11],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -103,6 +126,8 @@ const autosData = [
     nombre: 'Renault',
     imagen: imagesArray[12],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -110,6 +135,8 @@ const autosData = [
     nombre: 'Citroen C3',
     imagen: imagesArray[13],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -117,6 +144,8 @@ const autosData = [
     nombre: 'Ford',
     imagen: imagesArray[14],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -124,6 +153,8 @@ const autosData = [
     nombre: 'Peugeot 408 Sport',
     imagen: imagesArray[15],
     vendido: false,
+    adelanto: true,
+    valor_adelanto: '6000USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -131,6 +162,8 @@ const autosData = [
     nombre: 'Ford Ranger',
     imagen: imagesArray[16],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   {
@@ -138,6 +171,8 @@ const autosData = [
     nombre: 'Volkswagen Amarok',
     imagen: imagesArray[17],
     vendido: false,
+    adelanto: false,
+    valor_adelanto: '0USD',
     caracteristicas: ['Motor 1.8L', 'Automático', '5 puertas'],
   },
   // Agrega más autos aquí...
@@ -154,6 +189,7 @@ const AutoCard = ({ auto, onConsultar, onImageClick }) => {
           onClick={onImageClick} // Agregamos el evento onClick
         />
         {auto.vendido && <div className="sold-banner">Vendido</div>}
+        {auto.adelanto && <div className="adelanto-banner">Adelanto {auto.valor_adelanto}</div>}
       </div>
       <h3>{auto.nombre}</h3>
       <ul>

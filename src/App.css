@@ -5,10 +5,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  user-select: none; /* Desactiva la selección */
-  -webkit-user-select: none; /* Para navegadores WebKit (Chrome, Safari) */
-  -moz-user-select: none; /* Para Firefox */
-  -ms-user-select: none; /* Para Internet Explorer/Edge */
+  user-select: none;
+  /* Desactiva la selección */
+  -webkit-user-select: none;
+  /* Para navegadores WebKit (Chrome, Safari) */
+  -moz-user-select: none;
+  /* Para Firefox */
+  -ms-user-select: none;
+  /* Para Internet Explorer/Edge */
 }
 
 .app-container {
@@ -86,10 +90,13 @@ body {
   border-radius: 8px;
 }
 
-.auto-image:hover {
+
+  .auto-image:hover {
   transform: scale(1.2);
-  cursor: pointer; 
-}
+  cursor: pointer;
+  }
+
+
 
 .sold-banner {
   position: absolute;
@@ -102,15 +109,26 @@ body {
   border-radius: 5px;
 }
 
+.adelanto-banner {
+  position: absolute;
+  top: 160px;
+  left: 120px;
+  background-color: rgba(82, 5, 65, 0.815);
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 
 h3 {
   text-align: center;
   font-size: 30px;
 }
 
-aside a{
-    display: flex;
-    flex-direction: column;
+aside a {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -118,7 +136,7 @@ aside a{
   color: rgb(13, 158, 8);
 }
 
-.logo-whatsapp{
+.logo-whatsapp {
   width: 40px;
   height: 40px;
 }
