@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+assets_privado
 
 # Editor directories and files
 .vscode/*
