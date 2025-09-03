@@ -67,7 +67,8 @@ body {
 .autos-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: star;
+  margin-left: 50px;
 }
 
 .auto-card {
@@ -91,11 +92,10 @@ body {
 }
 
 
-  .auto-image:hover {
+.auto-image:hover {
   transform: scale(1.13);
   cursor: pointer;
-  }
-
+}
 
 
 .sold-banner {
@@ -112,7 +112,7 @@ body {
 .adelanto-banner {
   position: absolute;
   top: 160px;
-  left: 125px;
+  left: 120px;
   background-color: rgba(82, 5, 65, 0.815);
   color: white;
   padding: 5px 10px;
@@ -123,13 +123,21 @@ body {
 
 h3 {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.caract {
+  columns: 2;
 }
 
 aside a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.cuotas{
+  text-align: center;
 }
 
 .whatsapp {
