@@ -85,7 +85,7 @@ body {
 .autos-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: star;
+  justify-content: flex-start;
   margin-left: 50px;
 }
 
@@ -212,6 +212,7 @@ aside a:hover {
 
   .autos-grid {
     justify-content: center;
+    margin-left: 0;
   }
 
   .auto-card {
@@ -265,6 +266,7 @@ aside a:hover {
   .autos-grid {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
   }
 
   .auto-card {
