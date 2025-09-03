@@ -45,7 +45,7 @@ body {
   width: 250px;
 }
 
-.header_logo{
+.header_logo {
   width: 10%;
 }
 
@@ -243,6 +243,17 @@ aside a:hover {
   .header p {
     font-size: 1.2em;
   }
+
+    .adelanto-banner {
+    position: absolute;
+    top: 160px;
+    left: 150px;
+    background-color: rgba(82, 5, 65, 0.815);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
 }
 
 /* Celulares (pantallas hasta 600px) */
@@ -272,10 +283,9 @@ aside a:hover {
   }
 
   .auto-card {
-    width: 100%;
+    width: 90%;
     max-width: 340px;
     margin: 10px 0;
-    overflow: hidden;
   }
 
   .header h1 {
@@ -296,12 +306,23 @@ aside a:hover {
   }
 
   .logo_header {
-    width: 100px;
+    width: 120px;
     margin-bottom: 10px;
   }
 
   .header_texto {
     align-items: center;
     width: auto;
+  }
+
+  .adelanto-banner {
+    position: absolute;
+    top: 160px;
+    left: 150px;
+    background-color: rgba(82, 5, 65, 0.815);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
   }
 }
