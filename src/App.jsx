@@ -298,7 +298,8 @@ const Aside = () => {
       <h2>Información</h2>
       <p>Autos Usados</p>
       <p>Autos 0km</p>
-      <p>Recambio</p>
+      <p>Permuta</p>
+      <p>Repuestos</p>
       <p>Financiación</p>
       <p className='centrado'>¡De 12 a 48 cuotas fijas en pesos!</p>
       <p className='centrado'>¡3 meses de garantía en motor y transmisión!</p>
