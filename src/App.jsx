@@ -20,11 +20,11 @@ const imagesArray = Object.keys(images)
 const autosData = [
   {
     id: 1,
-    active: false,
+    active: true,
     nombre: 'Fiat Cronos',
     imagen: imagesArray[0],
     precio: '0',
-    vendido: false,
+    vendido: true,
     adelanto: false,
     valor_adelanto: '0USD',
     caracteristicas: ['Motor', 'Año', 'km', 'Combustible', 'Cambios', 'puertas'],
