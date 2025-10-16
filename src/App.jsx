@@ -21,26 +21,28 @@ const autosData = [
   {
     id: 1,
     active: true,
-    nombre: 'Fiat Cronos',
+    /*Datos correctos y cargados*/
+    nombre: 'Fiat Cronos Drive',
     imagen: imagesArray[0],
     precio: '0',
     vendido: true,
+    /*VENDIDO*/
     adelanto: false,
     valor_adelanto: '0USD',
-    caracteristicas: ['Motor', 'Año', 'km', 'Combustible', 'Cambios', 'puertas'],
+    caracteristicas: ['Motor 1.3L', '2021', '40.500km', 'Nafta', 'Manual', '5 puertas'],
     espacio_active: true,
   },
   {
     id: 2,
     active: true,
     /*Datos correctos y cargados*/
-    nombre: 'Nissan Frontier 4x4',
+    nombre: 'Nissan Le 4x4',
     imagen: imagesArray[1],
-    precio: '27000USD',
+    precio: '28000USD',
     vendido: false,
     adelanto: true,
     valor_adelanto: '14.000USD',
-    caracteristicas: ['Motor 2.3L', '2018', '46.000km', 'Diesel', 'Automático', '5 puertas'],
+    caracteristicas: ['Motor 2.3L', '2018', '53.000km', 'Diesel', 'Automático', '5 puertas'],
     espacio_active: true,
   },
   {
@@ -51,7 +53,8 @@ const autosData = [
     imagen: imagesArray[2],
     precio: '22.500USD',
     vendido: true,
-    adelanto: true,
+    /*VENDIDO*/
+    adelanto: false,
     valor_adelanto: '6.400USD',
     caracteristicas: ['Motor 1.4L', '2021', '87.000km', 'Nafta', 'Automático', '5 puertas'],
     espacio_active: true,
@@ -62,7 +65,7 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Renault Captur Intens SUV',
     imagen: imagesArray[3],
-    precio: '18.500USD',
+    precio: '17.000USD',
     vendido: false,
     adelanto: false,
     valor_adelanto: '0USD',
@@ -75,11 +78,11 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Volkswagen Suran Cross',
     imagen: imagesArray[4],
-    precio: '11.000USD',
+    precio: '10.500USD',
     vendido: false,
     adelanto: true,
-    valor_adelanto: '5.060USD',
-    caracteristicas: ['Motor 1.6L', '2011', '121.000km', 'Nafta', 'Manual', '5 puertas'],
+    valor_adelanto: '5.000USD',
+    caracteristicas: ['Motor 1.6L', '2017', '121.000km', 'Nafta', 'Manual', '5 puertas'],
     espacio_active: true,
   },
   {
@@ -88,7 +91,7 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Fiat 500 Pop Star',
     imagen: imagesArray[5],
-    precio: '12.500USD',
+    precio: '12.000USD',
     vendido: false,
     adelanto: false,
     valor_adelanto: '0USD',
@@ -101,7 +104,7 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Ford Ka SEL',
     imagen: imagesArray[6],
-    precio: '14.000USD',
+    precio: '13.500USD',
     vendido: false,
     adelanto: false,
     valor_adelanto: '0USD',
@@ -110,14 +113,15 @@ const autosData = [
   },
   {
     id: 8,
-    active: false,
-    nombre: 'Fiat',
+    active: true,
+    /*Datos correctos y cargados*/
+    nombre: 'Fiat Mobi',
     imagen: imagesArray[7],
-    precio: '0',
+    precio: '11.000USD',
     vendido: false,
     adelanto: false,
     valor_adelanto: '0USD',
-    caracteristicas: ['Motor', 'Año', 'km', 'Combustible', 'Cambios', 'puertas'],
+    caracteristicas: ['Motor 1.0L', '2017', '64.000km', 'Nafta', 'Manual', '5 puertas'],
     espacio_active: true,
   },
   {
@@ -126,7 +130,7 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Fiat Palio Attractive',
     imagen: imagesArray[8],
-    precio: '11.500USD',
+    precio: '11.000USD',
     vendido: false,
     adelanto: false,
     valor_adelanto: '0USD',
@@ -161,13 +165,13 @@ const autosData = [
     id: 12,
     active: true,
     /*Datos correctos y cargados*/
-    nombre: 'Ford Ecosport 4x2',
+    nombre: 'Ford Ecosport',
     imagen: imagesArray[11],
-    precio: '13.900USD',
+    precio: '18.500USD',
     vendido: false,
     adelanto: true,
     valor_adelanto: '7.000USD',
-    caracteristicas: ['Motor 2.0L', '2016', '118.000km', 'Nafta', 'Automático', '5 puertas'],
+    caracteristicas: ['Motor 1.8L', '2016', '110.000km', 'Nafta', 'Automático', '5 puertas'],
     espacio_active: true,
   },
   {
@@ -176,7 +180,7 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Renault Sander Stepway',
     imagen: imagesArray[12],
-    precio: '12.200USD',
+    precio: '15.200USD',
     vendido: false,
     adelanto: false,
     valor_adelanto: '0USD',
@@ -189,7 +193,7 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Citroen C3 Feel',
     imagen: imagesArray[13],
-    precio: '12.700USD',
+    precio: '17.900USD',
     vendido: false,
     adelanto: true,
     valor_adelanto: '6.400USD',
@@ -202,7 +206,7 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Ford Ka',
     imagen: imagesArray[14],
-    precio: '11.600USD',
+    precio: '16.500USD',
     vendido: false,
     adelanto: false,
     valor_adelanto: '0USD',
@@ -212,20 +216,20 @@ const autosData = [
   {
     id: 16,
     active: true,
-    /*Datos correctos y cargados VER MOTOR*/
+    /*Datos correctos y cargados*/
     nombre: 'Peugeot 408 Sport',
     imagen: imagesArray[15],
-    precio: '8.900USD',
+    precio: '8.500USD',
     vendido: false,
     adelanto: true,
-    valor_adelanto: '6.000USD',
+    valor_adelanto: '5.000USD',
     caracteristicas: ['Motor 1.6L', '2013', '131.000km', 'Nafta', 'Automático', '5 puertas'],
     espacio_active: true,
   },
   {
     id: 17,
-    active: true,
-    /*Datos correctos y cargados*/
+    active: false,
+    /*Datos correctos NO LISTADO*/
     nombre: 'Ford Ranger XL',
     imagen: imagesArray[16],
     precio: '21.000USD',
@@ -241,10 +245,10 @@ const autosData = [
     /*Datos correctos y cargados*/
     nombre: 'Volkswagen Amarok Extreme 4x4',
     imagen: imagesArray[17],
-    precio: '36.500USD',
+    precio: '35.000USD',
     vendido: false,
     adelanto: true,
-    valor_adelanto: '16.900USD',
+    valor_adelanto: '17.000USD',
     caracteristicas: ['Motor 3.0L', '2021', '64.000km', 'Manual', '5 puertas', 'Diesel'],
     espacio_active: false,
   },
