@@ -50,7 +50,7 @@ const autosData = [
     nombre: 'Chevrolet Cruze Premier',
     imagen: imagesArray[2],
     precio: '22.500USD',
-    vendido: false,
+    vendido: true,
     adelanto: true,
     valor_adelanto: '6.400USD',
     caracteristicas: ['Motor 1.4L', '2021', '87.000km', 'Nafta', 'Automático', '5 puertas'],
